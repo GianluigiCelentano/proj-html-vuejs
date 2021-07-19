@@ -71,3 +71,10 @@ input:focus {
     background-position: center;
     height: 130px;
 }
+.food {
+    width: 232px;
+}
+.shop {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
