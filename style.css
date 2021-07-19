@@ -46,7 +46,7 @@ input:focus {
     border: 1px solid grey;
 }
 .jumbotron {
-    height: 800px;
+    height: 900px;
     background-image: url(./img/banner.webp);
     background-size: cover;
     background-position: center;
