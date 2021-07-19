@@ -1,0 +1,67 @@
+.logo{
+    width: 100%;
+    cursor: pointer;
+}
+.strong {
+    color: black;
+    font-weight: bold;
+}
+input:focus {
+    outline: none;
+}
+.follow {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+.p-horizontal {
+    padding: 0 15px;
+}
+.p-vertical {
+    padding: 15px 0;
+}
+.p-vertical-big {
+    padding: 100px 0;
+}
+.p-vertical-plus {
+    padding: 200px 0 0 0;
+}
+.p-jumbo {
+    padding-top: 350px;
+}
+.b-20 {
+    border-radius: 20px;
+}
+.radius {
+    border-color: grey;
+    color: grey;
+}
+.radius:hover {
+    background-color: grey;
+    border-color: grey;
+    cursor: pointer;
+}
+.lessborder {
+    border: 1px solid grey;
+}
+.jumbotron {
+    height: 900px;
+    background-image: url(./img/banner.webp);
+    background-size: cover;
+    background-position: center;
+}
+.jumbo-content, .buy {
+    color: white;
+}
+.buy {
+    background-color: white;
+    border-color: white;
+}
+.buy:hover {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+.inside-jumbo {
+    color: black;
+}
