@@ -100,3 +100,21 @@ ul {
     background-size: contain;
     margin-top: 200px;
 }
+.avatar {
+    width: 200px;
+    border-radius: 100px;
+}
+.content-avatar {
+    width: 200px;
+    font-weight: bold;
+}
+.news-letter {
+    height: 400px;
+    background-image: url(./img/news-letter.webp);
+    background-size: cover;
+    background-position: center;
+}
+.news-button {
+    background-color: #263d28;
+    color: white;
+}
