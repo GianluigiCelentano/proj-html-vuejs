@@ -115,7 +115,7 @@
                     {{ product.name }}
                     {{ product.price }} $
                     <div class="p-vertical">
-                      <i class="fas fa-heart heart" @click="addWishList()"></i>
+                      <i class="fas fa-heart heart" @click="removeWishList(index)"></i>
                     </div>
                   </div>
               </div>
@@ -130,7 +130,7 @@
                     {{ product.name }}
                     {{ product.price }} $
                     <div class="p-vertical">
-                      <i class="fas fa-heart heart" @click="addWishList()"></i>
+                      <i class="fas fa-heart heart" @click="addWishList(index)"></i>
                     </div>
                   </div>
                 </div>

@@ -51,15 +51,11 @@ const app = new Vue ({
         
     },
     methods: {
-    addWishList() {
-      this.products.filter((product) => {
-        this.wishList.push({
-          name: product.name,
-          price: product.price,
-          img: product.img
-        })
-      })
-      // ho provato a pushre anche solo l index ma non mi pusha niente
+      addWishList(index) {
+        this.wishList.push(this.products[index])
+      },
+      removeWishList(index) {
+        this.wishList.splice(this.products[index])
+      }
     }
-  }
 })
