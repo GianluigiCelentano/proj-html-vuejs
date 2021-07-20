@@ -95,8 +95,8 @@ ul {
     background-position: center;
 }
 .user-testimonials {
-    background-image: url(./img/pattern.jpg);
-    background-size: contain;
-    background-position: center;
     height: 500px;
+    background-image: url(./img/pattern2.jpg);
+    background-size: contain;
+    margin-top: 200px;
 }
