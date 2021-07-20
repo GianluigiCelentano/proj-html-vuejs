@@ -22,7 +22,7 @@ input:focus {
     padding: 15px 0;
 }
 .p-vertical-big {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 .p-vertical-plus {
     padding: 200px 0 0 0;
@@ -87,4 +87,16 @@ ul {
 .heart {
     font-size: 20px;
     cursor: pointer;
+}
+.new-content {
+    height: 400px;
+    background-image: url(./img/newcontent.webp);
+    background-size: cover;
+    background-position: center;
+}
+.user-testimonials {
+    background-image: url(./img/pattern.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 500px;
 }
