@@ -101,15 +101,22 @@
       </div>
       <div> <!-- content product -->
         <div class="row p-vertical-plus">
-          <div class="col text-center">
+          <div class="col text-center p-vertical">
             <h2>Browse by category</h2>
             <h5 class="p-vertical">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</h5>
-            <ul v-for="product in products">
-              <li>{{ product.name }}
-                  {{ product.price }}
-                  
-              </li>
-            </ul>
+            <div v-for="product in products">
+              <div>
+                  <div><img class="products" :src="product.img" alt="" /></div>
+                  <div class="p-vertical">
+                    {{ product.name }}
+                    {{ product.price }} $
+                    <div class="p-vertical">
+                      <i class="fas fa-shopping-cart shop"></i>
+                      <i class="fas fa-heart heart"></i>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

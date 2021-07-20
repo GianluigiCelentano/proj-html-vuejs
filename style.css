@@ -81,3 +81,10 @@ input:focus {
 ul {
     list-style: none;
 }
+.products {
+    width: 450px;
+}
+.shop, .heart {
+    font-size: 20px;
+    cursor: pointer;
+}
