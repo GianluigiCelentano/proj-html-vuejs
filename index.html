@@ -99,28 +99,29 @@
           <h4 class="jumbo-content shop">Visit the shop</h4>
         </div>
       </div>
-      <div> <!-- content product -->
+      <div> <!-- content product / wishlist -->
         <div class="p-vertical-plus">
           <div class="text-center p-vertical">
             <h2>Browse by category</h2>
             <h5 class="p-vertical">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</h5>
+            
+            <div class="wishlist">
+              <div v-if="wishList.length !== 0"><h3>Your wishlist</h3></div>
+              <div v-else><h3>Empty wishlist</h3></div>
 
-            <div v-if="wishList.length !== 0"><h3>Your wishlist</h3></div>
-            <div v-else><h3>Empty wishlist</h3></div>
-
-            <div v-for="(product, index) in wishList">
-              <div>
-                  <div><img class="products" :src="product.img" alt="" /></div>
-                  <div class="p-vertical">
-                    {{ product.name }}
-                    {{ product.price }} $
+              <div v-for="(product, index) in wishList">
+                <div>
+                    <div><img class="products" :src="product.img" alt="" /></div>
                     <div class="p-vertical">
-                      <i class="fas fa-heart heart-red" @click="removeWishList(index)"></i>
+                      {{ product.name }}
+                      {{ product.price }} $
+                      <div class="p-vertical">
+                        <i class="fas fa-heart heart-red" @click="removeWishList(index)"></i>
+                      </div>
                     </div>
-                  </div>
+                </div>
               </div>
             </div>
-            
             <hr>
             
             <div v-for="(product, index) in products">

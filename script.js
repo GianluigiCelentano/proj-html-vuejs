@@ -52,10 +52,13 @@ const app = new Vue ({
     },
     methods: {
       addWishList(index) {
-        this.wishList.push(this.products[index])
-      },
-      removeWishList(index) {
-        this.wishList.splice(this.products[index])
+        if (this.wishList.push(this.products[index])) {
+          this.products.slice(index, 1)
+        }
+       },
+       removeWishList(index) {
+       this.wishList.splice(index, 1)
       }
     }
 })
+
