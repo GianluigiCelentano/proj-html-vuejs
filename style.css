@@ -84,7 +84,7 @@ ul {
 .products {
     width: 450px;
 }
-.shop, .heart {
+.heart {
     font-size: 20px;
     cursor: pointer;
 }

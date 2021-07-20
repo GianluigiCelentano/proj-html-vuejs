@@ -104,15 +104,23 @@
           <div class="col text-center p-vertical">
             <h2>Browse by category</h2>
             <h5 class="p-vertical">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</h5>
-            <div v-for="product in products">
+            <div class="p-vertical" v-for="product in wishList">
+              <div><img class="products" :src="product.img" alt="" /></div>
+              {{ product.name }}
+              {{ product.price }} $
+              <div class="p-vertical">
+                <i class="fas fa-heart heart" @click="addWishList"></i>
+              </div>
+            </div>
+            <hr>
+            <div v-for="(product, index) in products">
               <div>
                   <div><img class="products" :src="product.img" alt="" /></div>
                   <div class="p-vertical">
                     {{ product.name }}
                     {{ product.price }} $
                     <div class="p-vertical">
-                      <i class="fas fa-shopping-cart shop"></i>
-                      <i class="fas fa-heart heart"></i>
+                      <i class="fas fa-heart heart" @click="addWishList"></i>
                     </div>
                   </div>
               </div>

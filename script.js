@@ -44,11 +44,22 @@ const app = new Vue ({
           price: 10,
           img: "img/cat leash.jpg"
         },
-      ]
+      ],
+      wishList: []
     }, 
     created() {
         
     },
     methods: {
+    addWishList(index) {
+      for (let index = 0; index < this.products.length; index++) {
+        const product = this.products[index];
+        this.wishList.push({
+          name: product.name,
+          price: product.price,
+          img: product.img
+        })
+      }
+    }
   }
 })
