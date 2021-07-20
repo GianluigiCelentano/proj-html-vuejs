@@ -100,7 +100,18 @@
         </div>
       </div>
       <div> <!-- content product -->
-        
+        <div class="row p-vertical-plus">
+          <div class="col text-center">
+            <h2>Browse by category</h2>
+            <h5 class="p-vertical">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</h5>
+            <ul v-for="product in products">
+              <li>{{ product.name }}
+                  {{ product.price }}
+                  
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div> 
 <script src="script.js"></script>
