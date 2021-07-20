@@ -88,6 +88,14 @@ ul {
     font-size: 20px;
     cursor: pointer;
 }
+.heart:hover {
+    color: red;
+}
+.heart-red {
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
 .new-content {
     height: 400px;
     background-image: url(./img/newcontent.webp);
