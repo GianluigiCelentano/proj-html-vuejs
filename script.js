@@ -45,17 +45,17 @@ const app = new Vue ({
           img: "img/cat leash.jpg"
         },
       ],
-      wishList: []
+      wishList: [],
     }, 
     created() {
-        
     },
     methods: {
       addWishList(index) {
-        if (this.wishList.push(this.products[index])) {
-          this.products.slice(index, 1)
-        }
-       },
+        this.wishList.push(this.products[index]) 
+        this.products.slice(index, 1)
+        let unique = [...new Set(this.wishList)]
+        this.wishList = unique
+      },
        removeWishList(index) {
        this.wishList.splice(index, 1)
       }
