@@ -102,7 +102,7 @@ ul {
     background-size: cover;
     background-position: center;
 }
-.user-testimonials {
+.user-testimonials, .services {
     height: 500px;
     background-image: url(./img/pattern2.jpg);
     background-size: contain;
@@ -125,4 +125,8 @@ ul {
 .news-button {
     background-color: #263d28;
     color: white;
+}
+.services {
+    height: 400px;
+    font-size: 50px;
 }
