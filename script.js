@@ -3,6 +3,15 @@ Vue.config.devtools = true
 const app = new Vue ({
     el: '#app',
     data: {
+      navbar: {
+        home: "Home",
+        shop: "Shop",
+        about: "About",
+        services: "Services",
+        blog: "Blog",
+        contact: "Contact",
+        shopby: "Shop by brand"
+      },
       products: [
         {
           name: "bed",
@@ -46,6 +55,16 @@ const app = new Vue ({
         },
       ],
       wishList: [],
+      footer: {
+        bed: "Bed",
+        food: "Food",
+        toys: "Toys",
+        transport: "Transport",
+        myaccount: "My account",
+        orders: "Orders",
+        checkout: "Checkout",
+        cart: "Cart"
+      }
     }, 
     created() {
     },

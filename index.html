@@ -34,23 +34,23 @@
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Home
+                    {{navbar.home}}
                   </a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop
+                    {{navbar.shop}}
                   </a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    About
+                    {{navbar.about}}
                   </a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Servizi
+                    {{navbar.services}}
                   </a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Blog
+                    {{navbar.blog}}
                   </a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,7 +58,7 @@
                   </a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop by brand
+                    {{navbar.shopby}}
                   </a>
               </ul>
               <form class="d-flex">
@@ -225,19 +225,19 @@
           <div class="col-lg-2 col-md-4 col-sm-12 col-12">
             <ul>
               <li><h3>Shop by brand</h3></li>
-              <li>Link footer n</li>
-              <li>Link footer n</li>
-              <li>Link footer n</li>
-              <li>Link footer n</li>
+              <li class="footer-hover">{{footer.bed}}</li>
+              <li class="footer-hover">{{footer.food}}</li>
+              <li class="footer-hover">{{footer.toys}}</li>
+              <li class="footer-hover">{{footer.transport}}</li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-4 col-sm-12 col-12">
             <ul>
               <li><h3>Useful links</h3></li>
-              <li>Link footer n</li>
-              <li>Link footer n</li>
-              <li>Link footer n</li>
-              <li>Link footer n</li>
+              <li class="footer-hover">{{footer.myaccount}}</li>
+              <li class="footer-hover">{{footer.orders}}</li>
+              <li class="footer-hover">{{footer.checkout}}</li>
+              <li class="footer-hover">{{footer.cart}}</li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-4 col-sm-12 col-12">
@@ -249,11 +249,11 @@
           </div>
           <hr>
           <div class="jumbo-content text-center">
-            <span class="padding-gen footer-hover">Home</span>
-            <span class="padding-gen footer-hover">About</span>
-            <span class="padding-gen footer-hover">Blog</span>
-            <span class="padding-gen footer-hover">Contact</span>
-            <span class="padding-gen footer-hover">Shop</span>
+            <span class="padding-gen footer-hover">{{navbar.home}}</span>
+            <span class="padding-gen footer-hover">{{navbar.about}}</span>
+            <span class="padding-gen footer-hover">{{navbar.blog}}</span>
+            <span class="padding-gen footer-hover">{{navbar.contact}}</span>
+            <span class="padding-gen footer-hover">{{navbar.shop}}</span>
           </div>
           <div class="jumbo-content text-center top">
             <span class="padding-gen footer-hover"><i class="fab fa-facebook-f"></i></span>
@@ -264,9 +264,6 @@
         </div>
         <div class="row discount-box">
           <div class="col-12">
-            <div>
-              <img class="sie-size p-vertical" src="./img/sie-logo.svg" alt="">
-            </div>
             <div>© Copyright 2012 - 2021 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</div>
           </div>
         </div>
